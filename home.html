@@ -38,14 +38,14 @@
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-4" id='self_description'>
                     <h3>David Abelman</h3>
                     <p>I like data, and I like to make things.</p>
-                    <p>This page shows a selection of recent projects. My CV can be found <a href='https://dl.dropboxusercontent.com/u/27702211/David%20Abelman%20CV.pdf'>here</a> or on <a href='https://www.linkedin.com/in/davidabelman'>Linkedin</a>. I also keep an occasional <a href='http://davidabelman.wordpress.com'>blog</a> on my work.
+                    <p>This page shows a selection of recent projects. My CV can be found <a href='https://dl.dropboxusercontent.com/u/27702211/David%20Abelman%20CV.pdf'>here</a> or on <a href='https://www.linkedin.com/in/davidabelman'>Linkedin</a>. I also keep an occasional <a href='http://davidabelman.wordpress.com' target='blank'>blog</a> on my work.
                 </div>
                 <div class="col-sm-8">
                     <div class="row">
-                        <div class="col-md-3 portfolio-item" id='logistic'>
+                        <div class="col-md-3 col-xs-6 portfolio-item">
                             <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" id='logreg'>
                                 <div class="caption">
                                     <div class="caption-content">
@@ -57,7 +57,7 @@
                         </div>
 
 
-                        <div class="col-md-3 portfolio-item">
+                        <div class="col-md-3 col-xs-6 portfolio-item">
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal" id='football'>
                                 <div class="caption">
                                     <div class="caption-content">
@@ -67,7 +67,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-3 portfolio-item">
+                        <div class="col-md-3 col-xs-6 portfolio-item">
                             <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal" id='twitter'>
                                 <div class="caption">
                                     <div class="caption-content">
@@ -77,7 +77,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-3 portfolio-item">
+                        <div class="col-md-3 col-xs-6 portfolio-item">
                             <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal" id='speech'>
                                 <div class="caption">
                                     <div class="caption-content">
@@ -87,17 +87,17 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-3 portfolio-item">
+                        <div class="col-md-3 col-xs-6 portfolio-item">
                             <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal" id='zzb'>
                                 <div class="caption">
                                     <div class="caption-content">
                                         <i class="fa fa-search-plus fa-1x"></i>
-                                        <p>Song writing, audio and video production for 60's influenced pop band Zig Zag Birds</p>
+                                        <p>Song writing, audio production and video production</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-3 portfolio-item">
+                        <div class="col-md-3 col-xs-6 portfolio-item">
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal" id='bang'>
                                 <div class="caption">
                                     <div class="caption-content">
@@ -107,12 +107,12 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-3 portfolio-item">
+                        <div class="col-md-3 col-xs-6 portfolio-item">
                             <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal" id='guardian'>
                                 <div class="caption">
                                     <div class="caption-content">
                                         <i class="fa fa-search-plus fa-1x"></i>
-                                        <p>Visualising news articles in novel and informative ways</p>
+                                        <p>Visualising relationships between news articles from theguardian.com</p>
                                     </div>
                                 </div>
                             </a>
@@ -236,9 +236,10 @@
             </p>  
 
 
-            <a href='#'> 
-            <img src="img/portfolio/twitter.png" class="img-responsive img-centered" alt="">
-            </a>
+            <img src="img/portfolio/twitter_chart.png" class="img-responsive img-centered" alt="">
+            <p class='modal-caption'>
+                Screen-shot from a beta version. The user can view a small selection of metrics for each team on a dynamic chart, and hover over a random selection of individual tweets to read at the bottom of the screen.
+            </p>
 
           </div>
           
@@ -269,12 +270,12 @@
             <p>
                 This project uses recent advances in speech synthesis technology allowing speech to be altered <em>in real time</em>. A Microsoft Kinect is connected to a Hidden Markov Model based synthesiser, using software developed at Mons University (pHTS). This allows a user to make gestures in real-time, which control the prosody (vocal ups and downs) of the speech synthesiser as it produces speech. This is demonstrated in the video below.</p><p> The work has since been published in Speech Prosody (2014 Dublin conference), and the original thesis can be found <a href='https://dl.dropboxusercontent.com/u/27702211/David_Abelman_MSc_thesis.pdf' target='blank'>here</a>.
             </p>
-            <center>  
-            <iframe src="//player.vimeo.com/video/72305725?portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <p class='modal-caption'>
-                Video produced as part of the project.
-            </p>
-            </center>
+            <div class='iframe-holder'>
+                <iframe src="//player.vimeo.com/video/72305725?portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <p class='modal-caption'>
+                    Video produced as part of the project.
+                </p>
+            </div>
 
           </div>
           
@@ -298,8 +299,24 @@
                 I have worked in various musical capacities, from leading semi-professional music groups in London, to writing, recording and producing music for my own projects, and commissioned for other groups and individuals.
             </p>  
             <p>
-                A series of songs and videos were created for 60's influenced band 'Zig Zag Birds' by myself and <a href='http://edwardrandell.wordpress.com/' target='blank'>Edward Randell</a> in 2011. All music was recorded live in the video clips you see (<a href='https://www.youtube.com/watch?v=cBH0SCYM7Hs' target='blank'>so yes, three days recording guitar lines dressed as zombies</a>) - these can all be found on our <a href='http://www.youtube.com/zigzagbirds' target='blank'>Youtube</a> channel and <a href='zigzagbirds.bandcamp.com' target='blank'>Bandcamp.</a> I have also produced, written and recorded music for a variety of other artists, as well as my own EP, <a href = 'http://davidrael.bandcamp.com/'>In Time</a> (2012).
+                The video below is one of a series of songs and videos created for 60's influenced band 'Zig Zag Birds' by myself and <a href='http://edwardrandell.wordpress.com/' target='blank'>Edward Randell</a> in 2011. All music was recorded live in the video clip you see (so yes, three days recording guitar lines dressed as zombies). The whole collection of videos can all be found on our <a href='http://www.youtube.com/zigzagbirds' target='blank'>Youtube</a> channel.
             </p>
+            <p>
+                I have also produced, written and recorded music for a variety of other artists, as well as my own EP, <a href = 'http://davidrael.bandcamp.com/'>In Time</a> (2012) which can also be found below.
+            </p>
+            <div class='iframe-holder'>
+                <iframe width="560" height="315" src="//www.youtube.com/embed/cBH0SCYM7Hs?html5=1" frameborder="0" allowfullscreen></iframe>
+                <p class='modal-caption'>
+                    Music and video written and produced with Zig Zag Birds (2011).
+                </p>
+            </div>
+            <div class='iframe-holder'>
+                <iframe style="border: 0; width: 400px; height: 120px;" src="http://bandcamp.com/EmbeddedPlayer/album=3467949901/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://davidrael.bandcamp.com/album/in-time">In Time. by David Rael</a></iframe>
+                <p class='modal-caption'>
+                    In Time. EP (2012).
+                </p>
+            </div>
+            
 
           </div>
           
@@ -345,18 +362,22 @@
                 Situation
             </span>
             <p>
-                In 2006 no high-quality outlet existed for Oxford students to write about science.</p>  
+                In 2007 no high-quality outlet existed for Oxford students to write about science.</p>  
 
             <hr>
             <span class='heading-custom'>
                 Solution
             </span>
             <p>
-                <a href='https://www.linkedin.com/in/robbjones'>Rob Jones</a> and myself started <a href='http://bangscience.org/'>Bang! Science Magazine</a>, with a distribution of over 5,000 students around colleges in Oxford. Focusing on fresh, entertaining articles and eye-catching design, the magazine still publishes three times per year, and is Oxford's largest science magazine.
+                <a href='https://www.linkedin.com/in/robbjones'>Rob Jones</a> and myself founded <a href='http://bangscience.org/'>Bang! Science Magazine</a> in 2007. Our first issue raised all funds independently, had over 30 content contributors, and was distributed to over 5,000 students around colleges in Oxford. Focusing on fresh, entertaining articles and eye-catching design, the magazine still publishes three times per year (now through <a href='http://www.ospl.org/'>Oxford Student Publications Ltd</a>), and is Oxford's largest science magazine with a readership of over 7,000.
             </p>  
             <p>
                 Editors and contributors for Bang! Magazine have since gone on to write for national publications such as The Guardian and The Times in a scientfic capacity.
             </p>
+            <div data-configid="0/8664592" style="width: 650px; height: 456px;" class="issuuembed"></div><script type="text/javascript" src="http://e.issuu.com/embed.js" async="true"></script>
+            <p class='modal-caption'>
+                    First ever issue of Bang! Science Magazine.
+                </p>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -375,7 +396,8 @@
                 Project
             </span>
             <p>
-                An ongoing project to visualise collections of news articles in interesting ways. Click <a href='http://guardianviz.herokuapp.com/html/visualisation_index.html'>here</a> to visit site (work in progress).
+                An ongoing project to visualise collections of news articles in interesting ways. The relationship between news articles is seldom expressed in a good way by newspapers (other than a 'related stories' box) - this project aims to explore if there are more visual and useful ways to allow users to see evolution of stories over time.</p>
+                <p>Click <a href='http://guardianviz.herokuapp.com/html/visualisation_index.html'>here</a> to visit site (currently a work in progress).</p>
             </p>  
             <a href='#'> 
             <img src="img/portfolio/guardian_screen.png" class="img-responsive img-centered" alt="">
@@ -398,6 +420,7 @@
                     $('#logistic img').attr('src','img/portfolio/orange.png');
                 }
             );
+            
     });
     </script>
     

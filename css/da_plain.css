@@ -1,20 +1,32 @@
 /*Squares in portfolio, and resize rules*/
 .portfolio-link {
 /*Extra small default*/
-width: 380px;
-height: 380px;
-display:block;
+    width: 180px;
+    height:180px;
+    display:block;
+}
+@media(min-width:470px) {
+    .portfolio-link {
+        width: 220px;
+        height:220px;
+    }
+}
+@media(min-width:620px) {
+    .portfolio-link {
+        width: 290px;
+        height:290px;
+    }
 }
 @media(min-width:768px) {
     .portfolio-link {
-        width: 400px;
-        height:400px;
+        width: 230px;
+        height:230px;
     }
 }
 @media(min-width:992px) {
     .portfolio-link {
-        width: 150px;
-        height:150px;
+        width: 155px;
+        height:155px;
     }
 }
 @media(min-width:1200px) {
@@ -105,7 +117,8 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #999;
+    color: #d33;
+    /*text-decoration: underline;*/
 }
 
 h1,
@@ -122,22 +135,6 @@ h6 {
 
 .img-centered {
     margin: 0 auto;
-}
-
-
-
-@media(min-width:768px) {
-    header .container {
-        padding: 200px 0 100px;
-    }
-
-    header .intro-text .name {
-        font-size: 5em;
-    }
-
-    header .intro-text .skills {
-        font-size: 1.75em;
-    }
 }
 
 
@@ -191,7 +188,7 @@ h6 {
 */
 
 section {
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 section h2 {
@@ -205,13 +202,10 @@ section.success {
 }
 
 @media(max-width:767px) {
-    section {
-        padding: 75px 0;
+    #self_description {
+        padding-bottom: 20px;
     }
 
-    section.first {
-        padding-top: 75px;
-    }
 }
 
 #portfolio .portfolio-item {
@@ -265,11 +259,6 @@ section.success {
 }
 
 
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 13px;
-    }
-}
 
 .btn:focus,
 .btn:active,
@@ -386,4 +375,9 @@ html {
 
 .modal-custom img {
     padding-top: 20px;
+}
+
+.iframe-holder {
+    text-align: center;
+    padding: 10px;
 }
