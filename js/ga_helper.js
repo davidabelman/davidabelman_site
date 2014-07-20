@@ -25,7 +25,9 @@ $(document).ready( function () {
     $('a').click( function() { 
         link_location = $(this).attr('href');
         current_page = window.document.title;
-        ga('send', 'event', current_page, 'link clicked', link_location);
+        ga('send', 'event', current_page, 'link clicked', link_location, {'hitCallback': 
+        	function(){document.location = link_location;}}
+        	);
     } )
 
 });
