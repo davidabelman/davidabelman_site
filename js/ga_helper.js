@@ -5,6 +5,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-52998648-1', 'auto');
+ga('require', 'displayfeatures'); 
 ga('send', 'pageview');
 current_page = window.document.title;
 ga('send', 'event', current_page, 'page loaded');
@@ -25,6 +26,7 @@ $(document).ready( function () {
     $('a').click( function() { 
         link_location = $(this).attr('href');
         current_page = window.document.title;
+        // hitCallback ensures document.location only changes once the event has been received by GA
         ga('send', 'event', current_page, 'link clicked', link_location, {'hitCallback': 
         	function(){document.location = link_location;}}
         	);
