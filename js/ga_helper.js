@@ -9,6 +9,7 @@ ga('require', 'displayfeatures');
 ga('send', 'pageview');
 current_page = window.document.title;
 ga('send', 'event', current_page, 'page loaded');
+console.log("Sent page load event")
 
 // When doument is ready
 $(document).ready( function () {
@@ -19,6 +20,7 @@ $(document).ready( function () {
                 var id = $(this).find('a').attr('id');
                 current_page = window.document.title;
                 ga('send', 'event', current_page, 'portfolio item opened', id);
+                console.log("Sent portfolio event:", id);
         }
     );        
 
@@ -27,9 +29,12 @@ $(document).ready( function () {
         link_location = $(this).attr('href');
         current_page = window.document.title;
         // hitCallback ensures document.location only changes once the event has been received by GA
-        ga('send', 'event', current_page, 'link clicked', link_location, {'hitCallback': 
-        	function(){document.location = link_location;}}
-        	);
-    } )
+        ga('send', 'event', current_page, 'link clicked', link_location, 
+        	{'hitCallback': 
+        		function(){document.location = link_location;}
+        	}
+        );
+        console.log("Sent click event:", link_location)
+    })
 
 });
