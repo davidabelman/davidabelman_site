@@ -125,6 +125,16 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="col-md-3 col-xs-6 portfolio-item">
+                            <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal" id='poetry'>
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-1x"></i>
+                                        <p>Automatic poem generation using MapReduce algorithm on Twitter data</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -385,6 +395,35 @@
             </p>  
             <a href='http://guardianviz.herokuapp.com/html/visualisation_index.html' target='_blank'>
             <img src="img/portfolio/guardian_screen.png" class="img-responsive img-centered" alt="">
+            </a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id='portfolioModal8'>
+      <div class="modal-dialog modal-custom modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">Automatic poem generation using Twitter data</h4>
+          </div>
+          <div class="modal-body">
+            
+            <span class='heading-custom'>
+                Project
+            </span>
+            <p>
+                Toy project to practice MapReduce/Hadoop. Twitter data is crawled on a certain subject (one machine), and 'poetry' is generated from the resulting tweets. This is carried out over three passes of MapReduce:
+                <ol> 
+                    <li>Idenitfy unique tweets passing certain conditions</li>
+                    <li>Group tweets into sets of tweets that rhyme</li>
+                    <li>Score all possible pairs of rhyming tweets and sort by score</li>
+                </ol>
+                The details and code can be found on the <a href = 'http://twitterpoems.herokuapp.com/' target='_blank'>app's page</a>.
+            </p>
+            <a href = 'http://twitterpoems.herokuapp.com/' target='_blank'>
+                <img src="img/portfolio/poetry.png" class="img-responsive img-centered" alt="">
             </a>
           </div>
         </div><!-- /.modal-content -->

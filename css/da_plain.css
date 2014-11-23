@@ -99,6 +99,15 @@
    background-size: 100%;
 }
 
+#poetry {
+ background: transparent url('../img/portfolio/blue.png') center top no-repeat;
+}
+
+#poetry:hover {
+   background-image: url('../img/portfolio/poetry.png');
+   background-size: 100%;
+}
+
 body {
     overflow-x: hidden;
 }
