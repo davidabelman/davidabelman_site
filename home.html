@@ -1,3 +1,5 @@
+<!--To add elements to file...-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +30,7 @@
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
+
     <!-- Google Analytics -->
     <script src="js/ga_helper.js"></script>
 
@@ -50,6 +53,10 @@
                     <p>I like data, and I like to make things.</p>
                     <p>This page shows a selection of recent projects. My CV can be found 
                         <a href='https://dl.dropboxusercontent.com/u/27702211/David%20Abelman%20CV.pdf' target='_blank')>here</a> or on <a href='https://www.linkedin.com/in/davidabelman' target='_blank')>Linkedin</a>. I also keep an occasional <a href='http://davidabelman.wordpress.com' target='_blank'>blog</a> on my work.
+                    </p>
+                    <div id='side-image'>                        
+                        
+                    </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="row">
@@ -131,6 +138,26 @@
                                     <div class="caption-content">
                                         <i class="fa fa-search-plus fa-1x"></i>
                                         <p>Automatic poem generation using MapReduce algorithm on Twitter data</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-xs-6 portfolio-item">
+                            <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal" id='saltandpepper'>
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-1x"></i>
+                                        <p>Creation of a social network for older users with substantial feature base</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-xs-6 portfolio-item">
+                            <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal" id='ingleeze'>
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-1x"></i>
+                                        <p>Language learning by conversation - proof of concept / toy project</p>
                                     </div>
                                 </div>
                             </a>
@@ -429,6 +456,106 @@
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+
+    <div class="modal fade" id='portfolioModal9'>
+      <div class="modal-dialog modal-custom modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">Simple Social Network aimed at older users</h4>
+          </div>
+          <div class="modal-body">
+            
+            <span class='heading-custom'>
+                Situation
+            </span>
+            <p>
+                Most internet sites are aimed at tech-savvy users - in particular social networks. For someone like my grandmother, staying in touch using email/Skype is still too complicated for her to do without somebody else helping her each time.
+            </p>  
+            <p>
+                I decided to make a simple social network application which would allow me to stay in touch with my grandmother - and the rest of my family - whilst travelling around Asia in 2014. This was also my first ever project using the Flask microframework and other backend development tools.
+            </p>
+
+            <hr>
+            <span class='heading-custom'>
+                Solution
+            </span>
+            <p>
+                I have created a simple social network, called <a href='http://saltpepper.club' target='_blank'>'Salt and Pepper'</a>, designed with those with very little or no internet experience in mind. The site allows users to create groups, send messages, take photos, add photos from an image search, upload photos, and dictate messages verbally - all using extremely simple, large orange buttons, with detailed instructions in large fonts. And it has been tested successfully on my Grandmother!
+            </p>
+            <p>
+                <a href = 'http://saltpepper.club' target='_blank'>Click here</a> to visit the site, or <a href='https://davidabelman.wordpress.com/2014/08/15/salt-pepper-social-network-working-title/' target='_blank'>here</a> to read more on my blog, or continue reading for a list of technologies used.
+            </p>
+
+            <a href = 'http://saltpepper.club' target='_blank'>
+                <img src="img/portfolio/saltandpepper.png" class="img-responsive img-centered" alt=""><br><br>
+            </a>
+
+            <span class='heading-custom'>
+                Technologies used
+            </span>
+            <p>
+                I’ve used Flask as the framework for the backend, and a little Twitter Bootstrap on the frontend. Most javascipt uses Jquery. The website functionality is split pretty evenly between Flask, and Jquery AJAX calls to the backend. I use MongoHQ for the database, Mailgun to send out email, Dropbox for user-uploaded content, Embedly to resize images on the fly, Google Chrome web speech kit for dictation, and Heroku for deployment. Finally, analytics are captured using the fabulous Mixpanel.
+            </p>
+            
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id='portfolioModal10'>
+      <div class="modal-dialog modal-custom modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">Language learning through automated conversation</h4>
+          </div>
+          <div class="modal-body">
+            
+            <span class='heading-custom'>
+                Situation
+            </span>
+            <p>
+                A huge part of learning a language is through practicing conversation with native speakers - but unfortunately, many people around the world don't have access to a native speaker of the language they are learning, or are too shy to practice once paired up.
+            </p>
+            
+            <span class='heading-custom'>
+                Solution
+            </span>
+            <p>
+                Both to solve this problem, and play with Google's Speech Recognition API (this was actually my first project using Javascript!), I have created a mock-up of a 'conversation-bot' with which users can practice typical conversation scenarios online, without requiring a human partner. A very basic demo can be found <a href='#' target='_blank'>here</a>.
+            </p>
+
+            <p>
+                A large number of scenarios would be catered for - buying tickets at a train station, visiting a restaurant, going to the shops/market, meeting people, checking into a hotel, etc. Within each scenario, a graph/tree of possible conversation routes is pre-programmed into the backend. The app starts the conversation, with a pre-recorded sound clip from a native speaker. At this point (and at each subsequent branch of the tree), the user must say one of the possible responses. These are provided on the user's screen, though words can be missing (if the user wants a more challenging experience). If the user would like to hear the 'correct' pronunciation of one of the responses, they may click on it and listen. Once the user says once of the responses, the app 'listens', matches the response with the closest option, and scores the user based on how well the speech recognition matched the expected response. Words which are mispronounced are stored for the user to practice in isolation later.
+            </p>
+
+            <a href = '#' target='_blank'>
+                <img src="img/portfolio/ingleeze.png" class="img-responsive img-centered" alt="">
+            </a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+<script>
+$(document).ready( function () {
+
+    // On mouseover, find which box is hovered, get ID and show appropraite picture
+    $('.portfolio-item').mouseenter( function(){
+        // Find correct picture
+        var image_name = $(this).find('a').attr('id');
+        var image_html = '<img src="img/portfolio/'+image_name+'.png" class="img-responsive img-centered" alt="">'
+
+        $('#side-image').html( image_html )
+    })
+    // On mouseout, remove picture
+    $('.portfolio-item').mouseleave( function(){
+        $('#side-image').html('')
+    })
+    
+})
+</script>
 
 </body>
 

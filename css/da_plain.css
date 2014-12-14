@@ -1,3 +1,7 @@
+#side-image {
+    padding: 7%;
+}
+
 /*Squares in portfolio, and resize rules*/
 .portfolio-link {
 /*Extra small default*/
@@ -36,7 +40,20 @@
     }
 }
 
-#logreg {
+.portfolio-link:hover {
+    background: #444;
+    color: #fff;
+    font-weight: 400;
+}
+
+.portfolio-link {
+    /*background: #F58230;*/
+    background: #fff;
+    color: #444;
+    font-weight: 400;
+}
+
+/*#logreg {
  background: transparent url('../img/portfolio/red.png') center top no-repeat;
 }
 
@@ -108,12 +125,21 @@
    background-size: 100%;
 }
 
+#saltandpepper {
+ background: transparent url('../img/portfolio/red.png') center top no-repeat;
+}
+
+#saltandpepper:hover {
+   background-image: url('../img/portfolio/saltandpeppersquare.png');
+   background-size: 100%;
+}
+*/
 body {
     overflow-x: hidden;
 }
 
 p {
-    font-size: 15px;
+    font-size: 12.5px;
 }
 
 p.small {
@@ -238,7 +264,7 @@ section.success {
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-    opacity: 0;
+    opacity: 1;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
@@ -247,7 +273,6 @@ section.success {
     width: 100%;
     text-align: center;
     font-size: 15px;
-    color: #fff;
 }
 
 
