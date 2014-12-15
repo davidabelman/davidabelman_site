@@ -48,16 +48,22 @@
     <section id="portfolio">
         <div class="container">
             <div class="row">
+                
+                <!-- LH description column -->
                 <div class="col-sm-4" id='self_description'>
                     <h3>David Abelman</h3>
                     <p>I like data, and I like to make things.</p>
                     <p>This page shows a selection of recent projects. My CV can be found 
-                        <a href='https://dl.dropboxusercontent.com/u/27702211/David%20Abelman%20CV.pdf' target='_blank')>here</a> or on <a href='https://www.linkedin.com/in/davidabelman' target='_blank')>Linkedin</a>. I also keep an occasional <a href='http://davidabelman.wordpress.com' target='_blank'>blog</a> on my work.
+                        <a href='https://dl.dropboxusercontent.com/u/27702211/David%20Abelman%20CV.pdf' target='_blank')>here</a> or on <a href='https://www.linkedin.com/in/davidabelman' target='_blank')>Linkedin</a>. I also keep an occasional <a href='http://davidabelman.wordpress.com' target='_blank'>blog</a> on my work.<br><br>
                     </p>
+                    
                     <div id='side-image'>                        
-                        
+                        <!-- Preview image goes here via Javascript -->                    
                     </div>
-                </div>
+
+                </div> <!-- end of LH description column -->
+
+                <!-- Hover boxes for each project -->
                 <div class="col-sm-8">
                     <div class="row">
                         <div class="col-md-3 col-xs-6 portfolio-item">
@@ -83,7 +89,7 @@
                             </a>
                         </div>
                         <div class="col-md-3 col-xs-6 portfolio-item">
-                            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal" id='twitter'>
+                            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal" id='twitterspurs'>
                                 <div class="caption">
                                     <div class="caption-content">
                                         <i class="fa fa-search-plus fa-1x"></i>
@@ -270,7 +276,7 @@
                 Project
             </span>
             <p>
-                During a football match, tweets of two sets of fans are extracted using specified tags from the Twitter firehose. Information is extracted from tweets - including positive and negative sentiment, tweet 'passion', and overall volume of tweets. The ebbs and flows of these metrics are plotted in an interactive chart using D3.</p><p> An example match for the project can be found <a href='#'  target='_blank'>here</a>.
+                During a football match, tweets of two sets of fans are extracted using specified tags from the Twitter firehose. Information is extracted from tweets - including positive and negative sentiment, tweet 'passion', and overall volume of tweets. The ebbs and flows of these metrics are plotted in an interactive chart using D3.</p><p> An example match for the project can be found <a href='#' target='_blank'>here</a>.
             </p> 
 
             <span class='heading-custom'>
@@ -281,9 +287,12 @@
             </p>  
 
 
-            <img src="img/portfolio/twitter_chart.png" class="img-responsive img-centered" alt="">
+            <a href='#' target='_blank'>
+                <img src="img/portfolio/twitterspurs.png" class="img-responsive img-centered" alt="">
+            </a>
             <p class='modal-caption'>
-                Screen-shot from a beta version. The user can view a small selection of metrics for each team on a dynamic chart, and hover over a random selection of individual tweets to read at the bottom of the screen.
+                <br>
+                Screen-shot from basic version online. The user can view a small selection of metrics (for Tottenham only on this demo) on a dynamic chart, and hover over a random selection of individual tweets to read at the bottom of the screen.
             </p>
 
           </div>
@@ -418,9 +427,9 @@
             </span>
             <p>
                 An ongoing project to visualise collections of news articles in interesting ways. The relationship between news articles is seldom expressed in a good way by newspapers (other than a 'related stories' box) - this project aims to explore if there are more visual and useful ways to allow users to see evolution of stories over time.</p>
-                <p>Click <a href='http://guardianviz.herokuapp.com/html/visualisation_index.html' target='_blank'>here</a> to visit site (currently a work in progress).</p>
+                <p>Click <a href='https://guardian-news-visualisations.herokuapp.com/' target='_blank'>here</a> to visit site (currently a work in progress).</p>
             </p>  
-            <a href='http://guardianviz.herokuapp.com/html/visualisation_index.html' target='_blank'>
+            <a href='https://guardian-news-visualisations.herokuapp.com/' target='_blank'>
             <img src="img/portfolio/guardian_screen.png" class="img-responsive img-centered" alt="">
             </a>
           </div>

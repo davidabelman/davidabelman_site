@@ -13,14 +13,15 @@
     .portfolio-link {
         width: 220px;
         height:220px;
-    }
+    }    
 }
 @media(min-width:620px) {
     .portfolio-link {
         width: 290px;
         height:290px;
-    }
+    }    
 }
+
 @media(min-width:768px) {
     .portfolio-link {
         width: 230px;
@@ -38,6 +39,12 @@
         width: 180px;
         height:180px;
     }
+}
+/*Only display preview image on the side if on screen larger than 768*/
+@media(max-width:768px) {
+    #side-image {
+        display:none;
+    }    
 }
 
 .portfolio-link:hover {
