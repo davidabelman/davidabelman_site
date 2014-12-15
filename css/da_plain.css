@@ -1,5 +1,5 @@
 #side-image {
-    padding: 7%;
+    padding: 3% 3% 0% 0%;
 }
 
 /*Squares in portfolio, and resize rules*/
@@ -60,87 +60,6 @@
     font-weight: 400;
 }
 
-/*#logreg {
- background: transparent url('../img/portfolio/red.png') center top no-repeat;
-}
-
-#logreg:hover {
-   background-image: url('../img/portfolio/logistic.png');
-   background-size: 100%;
-}
-
-#football {
- background: transparent url('../img/portfolio/orange.png') center top no-repeat;
-}
-
-#football:hover {
-   background-image: url('../img/portfolio/coding.png');
-   background-size: 100%;
-}
-
-#twitter {
- background: transparent url('../img/portfolio/green.png') center top no-repeat;
-}
-
-#twitter:hover {
-   background-image: url('../img/portfolio/twitterfootball.png');
-   background-size: 100%;
-}
-
-#speech {
- background: transparent url('../img/portfolio/blue.png') center top no-repeat;
-}
-
-#speech:hover {
-   background-image: url('../img/portfolio/kinect_green.png');
-   background-size: 100%;
-}
-
-#zzb {
- background: transparent url('../img/portfolio/red.png') center top no-repeat;
-}
-
-#zzb:hover {
-   background-image: url('../img/portfolio/zzb.png');
-   background-size: 100%;
-}
-
-#bang {
- background: transparent url('../img/portfolio/orange.png') center top no-repeat;
-}
-
-#bang:hover {
-   background-image: url('../img/portfolio/bangweb.png');
-   background-size: 100%;
-}
-
-#guardian {
- background: transparent url('../img/portfolio/green.png') center top no-repeat;
-}
-
-#guardian:hover {
-   background-image: url('../img/portfolio/guardian.png');
-   background-size: 100%;
-}
-
-#poetry {
- background: transparent url('../img/portfolio/blue.png') center top no-repeat;
-}
-
-#poetry:hover {
-   background-image: url('../img/portfolio/poetry.png');
-   background-size: 100%;
-}
-
-#saltandpepper {
- background: transparent url('../img/portfolio/red.png') center top no-repeat;
-}
-
-#saltandpepper:hover {
-   background-image: url('../img/portfolio/saltandpeppersquare.png');
-   background-size: 100%;
-}
-*/
 body {
     overflow-x: hidden;
 }
