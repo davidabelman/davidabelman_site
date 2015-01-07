@@ -1,0 +1,5 @@
+<html>
+<script>
+window.location.replace('https://guardian-news-visualisations.herokuapp.com/butterfly_effect')
+</script>
+</html>
