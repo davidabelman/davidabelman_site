@@ -179,6 +179,18 @@
                             </a>
                         </div>
 
+                        <!-- Football pagerank project -->
+                        <div class="col-md-3 col-xs-6 portfolio-item">
+                            <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal" id='pagerank'>
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-1x"></i>
+                                        <p>Exploration of PageRank algorithm as a way to rank football team strength</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
                         <!-- Zig Zag Birds -->
                         <div class="col-md-3 col-xs-6 portfolio-item">
                             <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal" id='zzb'>
@@ -609,6 +621,30 @@
             </p>
             <p>
                 The analysis was put together in R, and makes a few big assumptions. Read the blog post <a href = 'https://davidabelman.wordpress.com/2015/01/13/analysing-parkrun-data-using-r/' >here</a>, or view the R script <a href = 'https://github.com/davidabelman/ParkrunAnalysis'>on Github</a>.
+            </p>
+            <!-- <a href = 'http://twitterpoems.herokuapp.com/' >
+                <img src="img/portfolio/poetry.jpeg" class="img-responsive img-centered" alt="">
+            </a> -->
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Pagerank football -->
+    <div class="modal fade" id='portfolioModal12'>
+      <div class="modal-dialog modal-custom modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">Exploration of Pagerank algorithm for ranking football team strength</h4>
+          </div>
+          <div class="modal-body">
+
+            <p>
+                A haphazard exploration of using PageRank-type algorithms to rank football teams by strength. After previously trying to create a football results predictor but finding modelling explicit 'team strength' a challenge, I am approaching this as its own subproblem. The techniques used are useful as they allow bookies, or punters, to model the relative strength of teams who haven't previously played each other (i.e. they are in different leagues) via a graph. PageRank (or 'ScoreRank') can seep through the graph according to chains of teams who <strong>have</strong> played one another.
+            </p>
+            <p>
+                The analysis is currently a work in progress, all put together in Python. I am keeping track of thoughts, figures and results as I go on my <a href = 'https://davidabelman.wordpress.com/2015/03/02/modelling-football-team-strength-using-pagerank/' >blog</a>, and you can view the code (again, a work in progress) <a href = 'https://github.com/davidabelman/football_pagerank'>on Github</a>.
             </p>
             <!-- <a href = 'http://twitterpoems.herokuapp.com/' >
                 <img src="img/portfolio/poetry.jpeg" class="img-responsive img-centered" alt="">
